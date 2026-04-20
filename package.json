@@ -3,5 +3,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {},
-  "dependencies": {}
+  "dependencies": {
+    "@shopify/shopify_function": "~2.0.0"
+  }
 }
