@@ -1,0 +1,29 @@
+query RunInput {
+  cart {
+    cost {
+      subtotalAmount {
+        amount
+      }
+    }
+    buyerIdentity {
+      customer {
+        hasAnyTag(tags: ["member"])
+      }
+    }
+    lines {
+      id
+      quantity
+      cost {
+        amountPerQuantity {
+          amount
+        }
+      }
+    }
+  }
+
+  discountNode {
+    metafield(namespace: "app", key: "tiers") {
+      jsonValue
+    }
+  }
+}
