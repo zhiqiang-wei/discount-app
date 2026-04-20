@@ -1,0 +1,19 @@
+{%- comment -%}
+  Discount banner snippet
+  Parameters:
+    - discount_code: The discount code to display (required)
+    - discount_amount: The discount value (required)
+    - discount_type: 'percentage' or 'fixed_amount' (optional, default: 'percentage')
+{%- endcomment -%}
+
+{%- assign discount_type = discount_type | default: 'percentage' -%}
+
+<link rel="stylesheet" href="{{ 'discount-banner.css' | asset_url }}">
+<script src="{{ 'discount-banner.js' | asset_url }}" defer></script>
+
+<discount-banner
+  data-discount-code="{{ discount_code }}"
+  data-discount-amount="{{ discount_amount }}"
+  data-discount-type="{{ discount_type }}"
+>
+</discount-banner>

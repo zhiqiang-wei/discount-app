@@ -1,0 +1,5 @@
+name = "discount-theme-app"
+type = "theme"
+
+[access_scopes]
+scopes = ""

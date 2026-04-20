@@ -1,0 +1,32 @@
+.discount-banner {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.discount-banner__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.discount-banner__code {
+  font-weight: 700;
+  font-size: 1.1em;
+  background: rgba(255,255,255,0.2);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.discount-banner__amount {
+  font-size: 1.4em;
+  font-weight: 800;
+}
+
+.discount-banner__label {
+  font-size: 0.9em;
+}

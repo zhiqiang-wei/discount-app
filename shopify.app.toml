@@ -1,0 +1,15 @@
+name = "discount-app"
+
+[access_scopes]
+# Learn more about access scopes at https://shopify.dev/docs/api/usage/access-scopes
+scopes = ""
+use_legacy_install_flow = false
+
+[auth]
+redirect_urls = []
+
+[webhooks]
+api_version = "2025-04"
+
+[pos]
+embedded = false
