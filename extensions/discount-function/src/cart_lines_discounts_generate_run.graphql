@@ -1,0 +1,28 @@
+query RunInput($tags: [String!] = ["member"]) {
+  cart {
+    cost {
+      totalAmount {
+        amount
+      }
+    }
+    buyerIdentity {
+      customer {
+        hasAnyTag(tags: $tags)
+      }
+    }
+    lines {
+      id
+      quantity
+      cost {
+        amountPerQuantity {
+          amount
+        }
+      }
+    }
+  }
+  discount {
+    metafield(namespace: "$app", key: "function-configuration") {
+      jsonValue
+    }
+  }
+}

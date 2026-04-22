@@ -1,0 +1,27 @@
+{
+  "payload": {
+    "export": "cart-lines-discounts-generate-run",
+    "target": "cart.lines.discounts.generate.run",
+    "input": {
+      "cart": {
+        "cost": {
+          "totalAmount": {
+            "amount": "0.00"
+          }
+        },
+        "buyerIdentity": {
+          "customer": {
+            "hasAnyTag": true
+          }
+        },
+        "lines": []
+      },
+      "discountNode": {
+        "metafield": null
+      }
+    },
+    "output": {
+      "operations": []
+    }
+  }
+}

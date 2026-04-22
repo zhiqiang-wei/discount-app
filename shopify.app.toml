@@ -7,14 +7,13 @@ embedded = true
 
 [build]
 automatically_update_urls_on_dev = true
-include_config_on_deploy = true
 
 [webhooks]
 api_version = "2026-07"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = ""
+scopes = "write_discounts,read_discounts"
 use_legacy_install_flow = false
 
 [auth]
@@ -22,3 +21,9 @@ redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
 
 [pos]
 embedded = false
+
+[discount.metafields.app.function-configuration]
+type = "json"
+name = "Function Configuration"
+access.admin = "merchant_read_write"
+access.storefront = "none"
